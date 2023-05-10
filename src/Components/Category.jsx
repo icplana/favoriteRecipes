@@ -17,7 +17,8 @@ export const Category = () => {
   
   return (
     <div className='bg-gradient-to-b mx-auto from-white to-gray-200 max-w-screen-xl'>
-          <Recetas 
+          <Recetas
+            name={ category + ' recipes' } 
             url = {`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`}       
           />
         

@@ -37,9 +37,11 @@ export const RecetaFull = () => {
     
     <div className='w-full max-w-screen-lg flex flex-col mx-auto bg-slate-100 p-3 rounded-md mt-5'>
       <h3 className="text-4xl my-4">{ info[1] }</h3>  
-      <button 
+      <button
+        datatype={ info[0] }
+        datatypename ={ info[1] }  
         className="text-lg bg-red-300 font-semibold p-2 rounded w-fit mb-4"
-        onClick={()=>{onAddFavorite(info[0])}}
+        onClick={ onAddFavorite }
       >
         Add Favorites
       </button> 

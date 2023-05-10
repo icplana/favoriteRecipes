@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { deleteFather, onDeleteFavorite } from "../helpers/functions"
+import { onDeleteFavorite } from "../helpers/functions"
 
 export const RecetaDelete = ({ imgUrl, title, id }) => {
 
@@ -10,12 +10,11 @@ export const RecetaDelete = ({ imgUrl, title, id }) => {
     <div className='w-96 border rounded-lg overflow-hidden '>
         <img src={ imgUrl } alt="" />
         <h3 className=" text-3xl mb-2">{ title }</h3>
-        <button 
+        <button
+          datatype={ id }
+          datatypename ={ title } 
           className="font-semibold rounded border px-2 py-1 bg-red-300 mb-2"
-          onClick={ (e)=>{
-            onDeleteFavorite(id)
-            deleteFather(e)
-          }}
+          onClick={ onDeleteFavorite }
         >
           Delete favorite
         </button>

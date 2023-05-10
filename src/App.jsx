@@ -6,6 +6,7 @@ import { Footer } from './Components/Footer'
 import { Category } from './Components/Category'
 import { Favoritos } from './Components/Favoritos'
 import { RecetaFull } from './Components/RecetaFull'
+import { Resultados } from './Components/Resultados'
 
 export const App = () => {
  
@@ -18,6 +19,7 @@ export const App = () => {
         <Route path="category" element={ <Category />}/>
         <Route path="favoritos" element={ <Favoritos />}/>
         <Route path="recetaFull" element={ <RecetaFull />}/>
+        <Route path="resultados" element={ <Resultados />}/>
       </Routes> 
 
       <Footer />

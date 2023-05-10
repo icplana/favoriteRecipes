@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Receta } from "./Receta"
 
-export const Recetas = ({ url }) => {
+export const Recetas = ({ name = "Top trending:", url }) => {
 
     const [data, setData] = useState([])
        
@@ -28,7 +28,8 @@ export const Recetas = ({ url }) => {
 
   return (
     <div >
-        <h1 className='text-6xl ml-4 font-bold mb-4' >Top trending:</h1>
+        
+        <h1 className='text-6xl ml-4 font-bold mb-4' >{ ( data.length < 1 ) ? 'No results' :name }</h1>
         <div className='flex flex-wrap justify-center gap-4'>
             {
                 data.map(e => {
