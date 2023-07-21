@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
-import { Recetas } from "./Recetas"
+import { Recetas } from "../Components/Recetas"
 
 
 export const Resultados = () => {
@@ -21,7 +21,7 @@ if (searchType === 'ingredient'){
     
 
   return (
-    <div>
+    <div className="mt-20">
         <Recetas 
             name ="Resultados:"
             url = { url } 

@@ -35,7 +35,7 @@ export const RecetaFull = () => {
 
   return (
     
-    <div className='w-full max-w-screen-lg flex flex-col mx-auto bg-slate-100 p-3 rounded-md mt-5'>
+    <div className='w-full max-w-screen-lg flex flex-col mx-auto bg-slate-100 p-3 rounded-md mt-20'>
       <h3 className="text-4xl my-4">{ info[1] }</h3>  
       <button
         datatype={ info[0] }

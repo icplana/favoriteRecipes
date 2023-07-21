@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import { RecetaDelete } from './RecetaDelete'
+import { RecetaDelete } from '../Components/RecetaDelete'
 
 
 
@@ -36,9 +36,9 @@ export const Favoritos = () => {
 
 
   return (
-      <>
+      <div className='mt-20'>
         {
-          (data.length < 1) ? <h2 className='text-4xl mx-auto rounded-lg mt-16 text-gray-700 bg-gray-300 p-8 w-fit font-semibold'>You don't have any favorite yet!</h2> :<h3 className=' text-center text-3xl my-5 ml-5'>Your favorite recipes!</h3>
+          (data.length < 1) ? <h2 className='text-4xl m-auto mb-48 rounded-lg mt-16 text-gray-700 bg-gray-300 p-8 w-fit font-semibold'>You don't have any favorite yet!</h2> :<h3 className=' text-center text-4xl my-5 ml-5'>Your favorite recipes!</h3>
         }
         <div className='w-full mx-auto mt-5 max-w-screen-xl flex-wrap flex gap-5 justify-center'>
         
@@ -53,6 +53,6 @@ export const Favoritos = () => {
           ))
         }
       </div>
-    </>
+    </div>
   )
 }
